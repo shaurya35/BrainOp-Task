@@ -63,17 +63,12 @@ Access the app in your web browser at `http://localhost:8080`.
 
 ## Tasks
 
-- Last date to submit the assignment will be : 4th May, 2024
-- Submit your assignments here: https://evalai.neusort.com/assignment/generic
-- You can reach out to us on this number : +919310530458 
-- Alternatively you can also reach out to us on : brij@hyrr.app 
-
 - Technology Stack:
 - [x] Node.js and npm
-- Express.js or another suitable Node.js framework
-- A database of your choice (MongoDB, PostgreSQL, MySQL, etc.)
+- [x] Express.js or another suitable Node.js framework
+- [x] A database of your choice (MongoDB, PostgreSQL, MySQL, etc.)
 - jsonwebtoken library for JWT generation and validation
-- Use React.js for component structure and functionality.
+- [x] Use React.js for component structure and functionality.
 
 - Signup Screen:
 - Include fields for username/email, password (with confirmation), and optional fields like name and profile picture.
