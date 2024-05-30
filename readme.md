@@ -37,11 +37,28 @@ Overview here.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/shaurya35/TriviaJs.git
-cd TriviaJs
+git clone https://github.com/shaurya35/BrainOp-Task
+cd BrainOp-Task
+```
+2. cd to folder:
+
+```bash
+cd client
 ```
 
-2. Install the dependencies:
+3. Install the dependencies:
+
+```bash
+npm install
+```
+
+4. cd to folder:
+
+```bash
+cd server
+```
+
+5. Install the dependencies:
 
 ```bash
 npm install
@@ -49,13 +66,19 @@ npm install
 
 ## Usage
 
-Run the Streamlit app to launch the web interface:
+Run the client:
 
 ```bash
-node index.js
+npm run dev
 ```
 
-Access the app in your web browser at `http://localhost:8080`.
+Run the server:
+
+```bash
+npm run dev
+```
+
+Access the app in your web browser at `http://localhost:5173/`.
 
 ## Contributors
 
@@ -67,34 +90,35 @@ Access the app in your web browser at `http://localhost:8080`.
 - [x] Node.js and npm
 - [x] Express.js or another suitable Node.js framework
 - [x] A database of your choice (MongoDB, PostgreSQL, MySQL, etc.)
-- jsonwebtoken library for JWT generation and validation
+- [x] jsonwebtoken library for JWT generation and validation
 - [x] Use React.js for component structure and functionality.
 
 - Signup Screen:
-- Include fields for username/email, password (with confirmation), and optional fields like name and profile picture.
+- [x] Include fields for username/email, password (with confirmation), and optional fields like name and profile picture.
 - Implement validation for the required fields and email format using React state management and validation libraries.
-- Include terms and conditions checkbox.
+- [x] Include terms and conditions checkbox.
 - Display clear error messages and success messages.
 - Simulate sending a welcome email notification upon successful signup (no actual email sending required).
-- Redirect to the post list screen after successful signup using React Router.
+- [x] Redirect to the post list screen after successful signup using React Router.
+
 - General Requirements:
 
 - Post list Screen:
-- There should be a screen where user can scroll infinitely and posts will be rendered using GET api of posts. 
+- [x] There should be a screen where user can scroll infinitely and posts will be rendered using GET api of posts. 
 - Implement responsive design using Tailwind.
 - Ensure the screens are visually appealing and consistent with the "MelodyVerse" theme (design details left to your interpretation).
-- Submit your code as a zip file or a link to a public repository.
+- [x] Submit your code as a zip file or a link to a public repository.
 
 - API Endpoints:
-- POST /signup:
-- Registers a new user with provided username, email, and password.
-- Validates input, ensures unique usernames and emails, hashes passwords securely.
-- Stores user data in the database.
-- Returns a success message and JWT token upon successful registration.
+- [x] POST /signup:
+- [x] Registers a new user with provided username, email, and password.
+- [x] Validates input, ensures unique usernames and emails, hashes passwords securely.
+- [x] Stores user data in the database.
+- [x] Returns a success message and JWT token upon successful registration.
 
 - GET /posts:
-- Paginated implementation of fetching posts data from database.
-- Should be secure and non authenticated apis should be rejected. 
+- [x] Paginated implementation of fetching posts data from database.
+- [x] Should be secure and non authenticated apis should be rejected. 
 
 - JWT Implementation:
 - Generate JWT tokens with appropriate payload and expiration time upon successful login.
