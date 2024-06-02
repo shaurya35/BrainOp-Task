@@ -19,18 +19,21 @@ Overview here.
 
 ## Features
 
-- 
-- 
-- 
+- Infinite Scroll on Posts page
+- Signup Authentication
+- Minimal Design
 
 ## Dependencies
 
-- 
-- 
-- 
-- 
-- 
-- 
+- bcrypt
+- cors
+- express
+- jsonwebtoken
+- mongoose
+- axios
+- react
+- react-router
+- tailwind
 
 ## Setup
 
