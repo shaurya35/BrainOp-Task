@@ -95,7 +95,7 @@ Access the app in your web browser at `http://localhost:5173/`.
 
 - Signup Screen:
 - [x] Include fields for username/email, password (with confirmation), and optional fields like name and profile picture.
-- Implement validation for the required fields and email format using React state management and validation libraries.
+- [X] Implement validation for the required fields and email format using React state management and validation libraries.
 - [x] Include terms and conditions checkbox.
 - Display clear error messages and success messages.
 - Simulate sending a welcome email notification upon successful signup (no actual email sending required).
@@ -121,28 +121,28 @@ Access the app in your web browser at `http://localhost:5173/`.
 - [x] Should be secure and non authenticated apis should be rejected. 
 
 - JWT Implementation:
-- Generate JWT tokens with appropriate payload and expiration time upon successful login.
-- Validate JWT tokens in protected routes to ensure user authentication.
-- Implement robust token refresh mechanisms if desired.
+- [x] Generate JWT tokens with appropriate payload and expiration time upon successful login.
+- [x] Validate JWT tokens in protected routes to ensure user authentication.
+- [x] Implement robust token refresh mechanisms if desired.
 
 - Best Practices:
-- Enforce input validation and sanitization to prevent vulnerabilities.
+- [x] Enforce input validation and sanitization to prevent vulnerabilities.
 - Protect against common attacks like SQL injection and XSS.
-- Securely store passwords using strong hashing algorithms (bcrypt or Argon2).
-- Implement proper error handling and provide informative error messages.
-- Write clean, well-structured, and documented code.
-- Consider using environment variables for sensitive information.
-- Handle sessions and token expiration effectively.
+- [x] Securely store passwords using strong hashing algorithms (bcrypt or Argon2).
+- [x] Implement proper error handling and provide informative error messages.
+- [x] Write clean, well-structured, and documented code.
+- [x] Consider using environment variables for sensitive information.
+- [x] Handle sessions and token expiration effectively.
 
 - Bonus Points:
 - Implement password reset functionality.
 - Integrate email verification for signup.
 - Add rate limiting to protect against brute force attacks.
-- Use middleware for authentication and authorization.
+- [x] Use middleware for authentication and authorization.
 - Write unit tests for API endpoints.
 - Implement social login options using mock APIs and React libraries.
 - Add password visibility toggle.
 - Use animations or microinteractions with React libraries like Framer Motion to enhance user experience.
-- Include accessibility features like alt text and keyboard navigation using ARIA attributes and focus management.
+- [x] Include accessibility features like alt text and keyboard navigation using ARIA attributes and focus management.
 - Implement unit testing for your React components using Jest or similar libraries.
 
