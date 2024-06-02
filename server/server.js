@@ -1,4 +1,3 @@
-// server.js
 
 const express = require('express');
 const mongoose = require('mongoose');
@@ -7,26 +6,26 @@ const authRoutes = require('./routes/auth');
 const postRoutes = require('./routes/posts');
 const cors = require('cors');
 
-// Load environment variables
+//environment variables
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-//cors
+
 // app.use(cors());
 const corsOptions = {
   origin: 'http://localhost:5173', 
-  optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
+  optionsSuccessStatus: 200 
 };
 
 app.use(cors(corsOptions));
 
 
-// Middleware to parse JSON requests
+// Middleware
 app.use(express.json());
 
-// Connect to MongoDB
+//MongoDB
 mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.error('MongoDB connection error:', err));

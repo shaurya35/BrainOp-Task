@@ -1,13 +1,11 @@
-// middleware/authMiddleware.js
 
 const jwt = require('jsonwebtoken');
 
-// Middleware to validate JWT tokens
 const authMiddleware = (req, res, next) => {
   const token = req.header('Authorization');
   
   if (!token) {
-    return res.status(401).json({ msg: 'No token, authorization denied' });
+    return res.status(401).json({ msg: 'No token Found' });
   }
 
   try {
@@ -15,7 +13,7 @@ const authMiddleware = (req, res, next) => {
     req.user = decoded.userId;
     next();
   } catch (err) {
-    res.status(401).json({ msg: 'Token is not valid' });
+    res.status(401).json({ msg: 'Invalid Token' });
   }
 };
 

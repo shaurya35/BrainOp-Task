@@ -23,7 +23,14 @@ const PostList = () => {
         setLoading(false);
       }
     };
-    fetchPosts();
+
+    const loadPostsWithDelay = () => {
+      setTimeout(() => {
+        fetchPosts();
+      }, 400);
+    };
+
+    loadPostsWithDelay();
   }, [page]);
 
   const handleScroll = () => {
@@ -46,9 +53,8 @@ const PostList = () => {
             <p>{post.content}</p>
           </div>
         ))}
-
       </div>
-      {loading && <p>Loading more posts...</p>}
+      {loading && <p className="text-center mt-4">Loading more posts...</p>}
     </div>
   );
 };

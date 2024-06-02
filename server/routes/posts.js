@@ -1,13 +1,9 @@
-// routes/posts.js
 
 const express = require('express');
 const authMiddleware = require('../middleware/authMiddleware');
 const Post = require('../models/Post');
 const router = express.Router();
 
-// @route   GET /posts
-// @desc    Get paginated posts
-// @access  Private
 router.get('/posts', authMiddleware, async (req, res) => {
   const { page = 1, limit = 10 } = req.query;
 
