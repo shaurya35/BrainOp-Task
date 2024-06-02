@@ -10,7 +10,7 @@ Project Description
 - [Setup](#setup)
 - [Usage](#usage)
 - [Contributors](#contributors)
-- [Acknowledgments](#acknowledgments)
+- [Tasks](#Tasks)
 
 
 ## Overview
