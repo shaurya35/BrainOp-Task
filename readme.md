@@ -67,6 +67,14 @@ cd server
 npm install
 ```
 
+5. Create .env file and Add:
+
+```bash
+PORT=<yourPortNumber>
+MONGO_URI=<yourMongoUri>
+JWT_SECRET=<yourJwt>
+```
+
 ## Usage
 
 Run the client:
